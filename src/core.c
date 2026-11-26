@@ -411,7 +411,7 @@ void KillAllInstances()
     closedir(proc_dir);
 }
 
-static void addLibPaths(box64context_t* context)
+ void addLibPaths(box64context_t* context)
 {
     if(BOX64ENV(emulated_libs)) {
         char* p = BOX64ENV(emulated_libs);
